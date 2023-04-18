@@ -16,6 +16,8 @@ To use the key-value store, follow these steps:
 
 ## Using the Key-Value Store
 
+Enable permissions on your machine. `chmod +x gostore``
+
 1. Start the server.
 ```bash
 ./gostore
