@@ -6,11 +6,11 @@ This is a simple implementation of a distributed key-value store in Golang. It u
 
 To use the key-value store, follow these steps:
 
-1. Clone the repository: git clone https://github.com/example/distributed-keyvalue-golang.git
-2. Navigate to the project directory: cd distributed-keyvalue-golang
+1. Clone the repository: git clone https://github.com/grayoj/gostore.git
+2. Navigate to the project directory: cd gostore
 3. Build the project. Run `go build`
-4. Start the server: ./distributed-keyvalue-golang
-5. Start up client: ./distributed-keyvalue-golang
+4. Start the server: ./gostore
+5. Start up client: ./gostore
 
 *Notice*: The server will listen on a _random TCP port_. The client will connect to the server on localhost and the port that the server is listening on.
 
@@ -18,15 +18,15 @@ To use the key-value store, follow these steps:
 
 1. Start the server.
 ```bash
-./distributed-keyvalue-golang
+./gostore
 ```
 2. Send a set message to the server to set a key-value pair.
 ```bash
-./distributed-keyvalue-golang set key1 value1
+./gostore set key1 value1
 ```
 3. To get the value of a key, send a `get` message.
 ```bash
-./distributed-keyvalue-golang get key1
+./gostore get key1
 ```
 
 ## Functionality
