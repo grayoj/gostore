@@ -43,6 +43,6 @@ Feel free to open a PR or make an issue!
 
 ## References
 
-https://github.com/akritibhat/Distributed-Key-Value-Store-Go-Lang
-https://mrkaran.dev/posts/barreldb/
-https://github.com/geohot/minikeyvalue
+1. https://github.com/akritibhat/Distributed-Key-Value-Store-Go-Lang
+2. https://mrkaran.dev/posts/barreldb/
+3. https://github.com/geohot/minikeyvalue
