@@ -6,7 +6,7 @@ This is a simple implementation of a distributed key-value store in Golang. It u
 
 To use the key-value store, follow these steps:
 
-1. Clone the repository: git clone https://github.com/grayoj/gostore.git
+1. Clone the repository
 2. Navigate to the project directory: cd gostore
 3. Build the project. Run `go build`
 4. Start the server: ./gostore
@@ -33,9 +33,9 @@ Enable permissions on your machine. `chmod +x gostore``
 
 ## Functionality
 
-This program (code) makes use of different types to facilitate its functionality. The KeyValue type is used to represent key-value pairs, while the ServerState type is used to store the server's internal state and ensure synchronization using a mutex. Additionally, the Server type is used to manage the server itself and includes several methods, such as handling client connections and processing "get" and "set" messages.
+This program (code) makes use of different types to facilitate its functionality. The `KeyValue` type is used to represent key-value pairs, while the ServerState type is used to store the server's internal state and ensure synchronization using a mutex. Additionally, the Server type is used to manage the server itself and includes several methods, such as handling client connections and processing "get" and "set" messages.
 
-The NewServer function creates a new Server instance, sets it to listen for TCP connections on a random port, initializes the server's encoder and decoder, and then returns the created server. On the other hand, the NewClient function creates a new client, connects to the server using the provided address, and then returns an encoder and decoder for the connection.
+The `NewServer` function creates a new Server instance, sets it to listen for TCP connections on a random port, initializes the server's encoder and decoder, and then returns the created server. On the other hand, the `NewClient` function creates a new client, connects to the server using the provided address, and then returns an encoder and decoder for the connection.
 
 In the main function, a new Server is created and started in a new goroutine. The program waits for the server to start listening for connections before creating a new client. The client then sends a "set" message to the server to store a key-value pair, followed by a "get" message to retrieve thevalue for that key. Finally, the program prints the server's response and stops the server.
 
