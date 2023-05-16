@@ -164,12 +164,14 @@ func main() {
 		log.Fatal(err)
 	}
 
-	message := KeyValue{Key: "key1", Value: "value1"}
+	// Set a key-value pair
+	message := KeyValue{Key: "set", Value: "key1=value1"}
 	err = encoder.Encode(message)
 	if err != nil {
 		log.Fatal(err)
 	}
 
+	// Retrieve the value for the key
 	message = KeyValue{Key: "get", Value: "key1"}
 	err = encoder.Encode(message)
 	if err != nil {
@@ -185,5 +187,5 @@ func main() {
 	fmt.Printf("response: %s\n", response.Value)
 
 	server.Stop()
-
 }
+
